@@ -1,12 +1,11 @@
-import React, {useEffect} from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 import Input from "../shared/Input";
 import styles from './search.module.scss'
 import search from '../../assets/icons/magnifiying-glass.svg'
 import exit from '../../assets/icons/letter-x.svg'
-import {clearSearch, getSearchResults} from "../../store/data/actions";
-import {connect} from "react-redux";
-import {getSearchedBreeds} from "../../store/data/selectors";
+import { clearSearch, getSearchResults } from "../../store/data/actions";
+import { connect } from "react-redux";
 
 const Search = ({
 	onchange,
@@ -29,12 +28,10 @@ Search.propTypes = {
 	onchange: PropTypes.func.isRequired,
 	clear: PropTypes.func.isRequired,
 };
-const mapStateToProps = (state) => ({
 
-});
 const mapDispatchToProps = (dispatch) => ({
 	onchange: () => { dispatch(getSearchResults()); },
 	clear: () => { dispatch(clearSearch()); },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Search);
+export default connect(null, mapDispatchToProps)(Search);

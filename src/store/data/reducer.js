@@ -4,7 +4,6 @@ import {
 	SET_IMAGE_DISPLAY_STATUS,
 	SET_SEARCHED_BREEDS,
 } from './types';
-// import {example1, obj, obj2, example2, example3, example4} from '../../assets/input';
 
 const initialState = {
 	breeds: [],
@@ -14,7 +13,7 @@ const initialState = {
 	inputValue: '',
 };
 
-export default function breedsReducer(state = initialState, action) {
+const breedsReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case SET_BREED_IMAGE:
 			return {
@@ -36,6 +35,7 @@ export default function breedsReducer(state = initialState, action) {
 			return {
 				...state,
 				imageDisplayStatus: action.payload,
+				breedImage: action.payload ? state.breedImage : ''
 			};
 		case CHANGE_INPUT_VALUE:
 			return {
@@ -45,4 +45,5 @@ export default function breedsReducer(state = initialState, action) {
 		default:
 			return state;
 	}
-}
+};
+export default breedsReducer;
