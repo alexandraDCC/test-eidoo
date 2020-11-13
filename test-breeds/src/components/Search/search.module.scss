@@ -1,0 +1,21 @@
+.search {
+  width: 20%;
+  position: absolute;
+  right: 5%;
+  display: flex;
+}
+.buttonSearch {
+  width: 2rem;
+  height: 2rem;
+  padding: 0 0.4rem;
+}.buttonExit {
+   width: 1.8rem;
+   height: 1.8rem;
+   padding: 0.1rem 0.4rem;
+  cursor: pointer;
+   &:hover {
+     box-shadow: inset -0.2rem -0.2rem 0.2rem #00000047;
+     border-radius: 0.3rem;
+   }
+ }
+

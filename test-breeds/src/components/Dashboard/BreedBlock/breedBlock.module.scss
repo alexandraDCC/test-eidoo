@@ -1,0 +1,18 @@
+@import "../../../assets/variables";
+
+.breedBlock {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0.4rem;
+  height: fit-content;
+  width: 65%;
+}
+.phantomBlock {
+  height: 0;
+  width: 20%
+}
+.empty {
+  font-size: 2rem;
+  color: rgba(80, 113, 249, 0.51);
+}

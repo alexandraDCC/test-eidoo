@@ -1,0 +1,39 @@
+@import "../../assets/variables";
+
+.imageBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  background-color: $white;
+  position: fixed;
+  top: 15vh;
+  height: 85vh;
+  right: 0;
+}
+.image {
+  max-width: 95%;
+  min-width: 75%;
+  max-height: 100%;
+}
+.imageHide {
+  display: none;
+}
+.closeImage {
+  position: absolute;
+  right: 1rem;
+  height: auto;
+  top: 1rem;
+  width: 1.5rem;
+}
+.imageBlockText {
+  color: $light-blue;
+  font-size: 2rem;
+  width: 90%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed;
+}
+

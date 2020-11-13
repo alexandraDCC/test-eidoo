@@ -1,0 +1,11 @@
+node_modules/
+.idea/
+.env
+npm-debug.log
+.DS_Store
+.dist/1.main.js
+.dist/main.js
+build
+.dockerignore
+Dockerfile
+Dockerfile.prod

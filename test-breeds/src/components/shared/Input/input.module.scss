@@ -1,0 +1,12 @@
+.input {
+  border: none;
+  background-color: unset;
+  border-bottom: 2px solid black;
+  width: 90%;
+  font-size: 1.5rem;
+  &:active, &:focus {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+  }
+}

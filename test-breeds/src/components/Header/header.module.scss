@@ -1,0 +1,13 @@
+@import "../../assets/variables";
+
+.header {
+  align-items: center;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  background-color: $light-blue;
+  border-radius: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
