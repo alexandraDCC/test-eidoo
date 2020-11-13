@@ -1,7 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import BreedBlock from "./BreedBlock";
 import styles from './dashboard.module.scss'
-import MainPage from "../../pages/MainPage";
 import ImageBlock from "../ImageBlock";
 
 const Dashboard = () => {

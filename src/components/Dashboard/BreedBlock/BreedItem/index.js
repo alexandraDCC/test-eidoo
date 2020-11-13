@@ -26,6 +26,7 @@ BreedItem.propTypes = {
 	setBreeds: PropTypes.func.isRequired,
 	breeds: PropTypes.object.isRequired,
 	showImage: PropTypes.bool.isRequired,
+	title: PropTypes.string.isRequired,
 };
 const mapStateToProps = (state) => ({
 
