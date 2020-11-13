@@ -20,7 +20,7 @@ export const searchProcess = (data) => async (dispatch) => {
 };
 export const clearSearch = () => async (dispatch) => {
 	await dispatch(setInputValue(''));
-	dispatch(getSearchResults())
+	dispatch(getSearchResults());
 };
 
 export const getBreeds = () => async (dispatch) => {
@@ -54,11 +54,14 @@ export const setBreedImage = (breed) => async (dispatch) => {
 };
 
 export const getSearchResults = () => async (dispatch, getState) => {
-	let state = getState(),
-	    searchString = state.breedStore.inputValue,
+	try {
+		let state = getState(),
+			searchString = state.breedStore.inputValue,
 			breeds = state.breedStore.breeds;
-	const searchedBreeds = breeds.filter((item) => {
-		return item.includes(searchString);
-	});
-	dispatch(setSearchedBreeds(searchedBreeds));
+		const searchedBreeds = breeds.filter((item) => {
+			return item.includes(searchString);
+		});
+		dispatch(setSearchedBreeds(searchedBreeds));
+	} catch (e) {
+	}
 };
